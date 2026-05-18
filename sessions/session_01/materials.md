@@ -33,4 +33,3 @@ Each participant should copy the `participant_starter/` template folder to their
 ## Key URLs / Tools
 - Cursor download: [cursor.sh]
 - Claude Code documentation: [docs.anthropic.com]
-- sherpa-b MCP (for homework workflows): configured via .mcp.json in participant project

@@ -20,14 +20,12 @@ If you get stuck, ask Claude Code for help: *"Help me connect this project folde
 
 ---
 
-## Part 2: Complete the Ideation Workflow (sherpa-b MCP)
+## Part 2: Complete the Ideation Workflow
 
-Run the full ideation workflow using the personal knowledge system as your use case.
+Work through the ideation workflow with Claude. Open your project in Cursor, reference the workflow file, and work through each step in order.
 
-**Start the workflow in Claude Code:**
-```
-Run the ideation workflow
-```
+**To start — open a new chat in Claude Code and type:**
+> `@workflows/ideation.md` — Let's work through the ideation workflow together. My use case is the Personal Knowledge and Thinking System.
 
 **Your use case to work from:**
 You are designing a **Personal Knowledge and Thinking System** — a system you build around something you genuinely care about, with a return loop that brings you back to it regularly.
@@ -43,31 +41,33 @@ Example loops to inspire yours (don't copy — make it yours):
 - **Question You're Chasing:** Define an open question → add material → system connects it to your question → answer evolves → repeat
 - **Daily Prompt:** Add things → system surfaces one thing daily → you respond in 2 sentences → response enriches the system → repeat
 
-**Work through all ideation steps.** The workflow will guide you through:
-- Problem framing (current state → desired state)
-- Assumption challenging
-- Autonomy spectrum design
-- Solution selection
-- Quality risk identification
-- Validation experiment design
+**Work through all steps.** The workflow will guide you through:
+- [ ] Step 1: Problem framing (current state → desired state)
+- [ ] Step 2: Assumption challenging
+- [ ] Step 3: Autonomy spectrum + solution generation
+- [ ] Step 4: Solution selection
+- [ ] Step 5: Quality risk identification
+- [ ] Step 6: Validation experiment design
 
-**Save your output:** The workflow will produce your `docs/problem_definition.md`. Make sure it's saved before you finish.
+**When all steps are done**, the workflow is complete. You can revisit any step at any time. Your output should be saved to `docs/problem_definition.md` before you finish.
 
 ---
 
-## Part 3: Complete the Profile + Goals Workflow (sherpa-b MCP)
+## Part 3: Finish Your Profile + CLAUDE.md
 
 If you didn't finish your `participant_profile.md` and `CLAUDE.md` in session, complete them now.
 
-**Start the workflow in Claude Code:**
-```
-Run the orientation workflow
-```
+**To start — open a new chat in Claude Code and type:**
+> `@workflows/orientation.md` `@docs/participant_profile.md` — Let's finish my participant profile. Here's what I have so far — continue from where we left off.
 
-Skip the install/setup steps if you've already completed them. Focus on:
-- The profile conversation (background, goals, working style, technical context)
-- Writing or refining your `participant_profile.md`
-- Updating your `CLAUDE.md` with anything new you learned in session
+Work through these steps:
+- [ ] Background: who you are, your role, technical level, domain expertise
+- [ ] Goals: what you want to get out of this course
+- [ ] Project idea: your knowledge domain and return loop design
+- [ ] Save everything to `docs/participant_profile.md`
+- [ ] Update `CLAUDE.md` with anything new you learned about yourself
+
+**When all steps are done**, the workflow is complete. Everything you discover should be captured in `docs/participant_profile.md` — this is the source of truth Claude reads about you.
 
 ---
 
