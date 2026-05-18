@@ -30,7 +30,7 @@ your-project/
 │
 ├── prompts/                     ← Prompt templates you write and refine (Sessions 3–4)
 │
-├── workflows/                   ← Documented AI workflows and process diagrams
+├── workflows/                   ← Course workflow guides — reference with @workflows/[name].md
 │
 └── src/                         ← Your source code — add this when you start building (Session 5+)
 ```
