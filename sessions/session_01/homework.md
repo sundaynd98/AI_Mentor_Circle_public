@@ -9,6 +9,7 @@ Complete all four parts before Session 2. Post your reflection to the Teams chan
 Your project starts from a shared starter template — a pre-built folder structure with the workflows, CLAUDE.md, and docs layout already in place.
 
 **Steps:**
+
 1. Go to `https://github.com/sundaynd98/AI_Mentor_Circle_public` (make sure you're signed into GitHub)
 2. Click the green **"Use this template"** button near the top of the page, next to the "Code" button → select **"Create a new repository"**
 3. Name your repo after your project (e.g., `my-knowledge-system`)
@@ -16,15 +17,15 @@ Your project starts from a shared starter template — a pre-built folder struct
 5. Click **"Create repository"**
 6. On your new repo page, click **"Code"** → copy the HTTPS URL
 7. Open Cursor and in the terminal run:
-   ```
+  ```
    git clone [your-repo-url]
-   ```
+  ```
 8. Open the cloned folder in Cursor — this is your project workspace
 
 **Why this matters:** The template gives you the right structure from the start — workflows, docs, and CLAUDE.md are already wired up. You're not building from scratch, you're building on a foundation the course is designed around.
 
 > **If you run into trouble:** If you don't see the "Use this template" button, make sure you're signed into GitHub and reload the page. If you get stuck at the cloning step, open Claude Code in an empty folder and type:
-> *"Help me clone https://github.com/sundaynd98/AI_Mentor_Circle_public and set it up as my project in Cursor."*
+> *"Help me clone [https://github.com/sundaynd98/AI_Mentor_Circle_public](https://github.com/sundaynd98/AI_Mentor_Circle_public) and set it up as my project in Cursor."*
 
 ---
 
@@ -33,19 +34,20 @@ Your project starts from a shared starter template — a pre-built folder struct
 When you cloned the template in Part 1, your local project was already connected to your GitHub repo. Now you just need to verify the connection and make your first commit after you've made changes.
 
 **Steps:**
+
 1. Make sure you have a GitHub account — you need one to complete Part 1 (github.com)
 2. Open your cloned project folder in Cursor
 3. In the Claude Code terminal, verify your project is connected to your repo:
-   ```
+  ```
    git remote -v
-   ```
+  ```
    You should see your repo URL listed. If nothing shows, ask Claude Code for help: *"Help me connect this project folder to my GitHub repo."*
 4. After completing Parts 3 and 4, make your first commit and push:
-   ```
+  ```
    git add .
    git commit -m "Initial setup — workspace, CLAUDE.md, and profile"
    git push
-   ```
+  ```
 
 **Why this matters:** You're about to start producing real artifacts. Git gives you a safety net and a record of how your thinking evolves.
 

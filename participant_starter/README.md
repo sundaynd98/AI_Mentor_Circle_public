@@ -1,8 +1,8 @@
 # Participant Starter Workspace
 
-This is your project folder for AI Mentor Circle — Track 1: AI as a Collaborator.
+This is your project folder for AI Mentor Circle.
 
-Copy this folder to your machine and rename it to match your project (e.g., `my-knowledge-system`).
+Click "Use this template" on GitHub to create your own copy of this repo, then clone it to your machine.
 
 ---
 
@@ -66,7 +66,7 @@ your-project/
 ## Key Habits
 
 - **Update CLAUDE.md every session** — it grows with your project
-- **Append to session_log.md at the end of every session** — ask Claude to do it: *"Summarize what we did today and append a new entry to docs/reports/session_log.md"*
+- **Append to session_log.md at the end of every session** — run `/wrap-up` in Claude Code to walk through your reflection and draft the entry
 - **Log major decisions to decisions.md** — never edit past entries, only append
 - **Connect to GitHub** after Session 1 — first homework
 
@@ -75,6 +75,5 @@ your-project/
 ## Tips
 
 Ask Claude to help with any of this:
-- *"Create the standard folder structure for my AI project"*
 - *"Help me write my participant_profile.md"*
 - *"Append a session log entry for what we just did"*
