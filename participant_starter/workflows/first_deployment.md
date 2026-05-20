@@ -14,7 +14,7 @@
 2. Complete one step fully before moving to the next
 3. Where a step shows "Confirm before continuing" — ask that question and wait for a response before proceeding
 4. Save outputs to the file paths specified in each step
-5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/session_log.md`
+5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/reports/session_log.md`
 
 - Keep tone grounded and realistic; explain why each deployment decision matters for learning
 - Be encouraging about shipping but ruthless about scope
@@ -522,7 +522,7 @@ Keep it short — just a few sentences wrapping up the design process.
 
 ## Workflow Complete
 
-All steps are complete. Update `docs/session_log.md` with your reflection and commit your changes.
+All steps are complete. Update `docs/reports/session_log.md` with your reflection and commit your changes.
 
 ---
 

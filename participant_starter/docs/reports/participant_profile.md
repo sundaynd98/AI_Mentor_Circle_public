@@ -12,7 +12,7 @@
 
 ## My Project
 [What you're building — this will grow as the course progresses]
-[For now: your initial thinking about your personal knowledge system and return loop]
+[For now: your initial thinking about your project idea and return loop]
 
 ## How I Think
 [How you process information — visual? systematic? exploratory? example-driven?]

@@ -14,12 +14,12 @@
 2. Complete one step fully before moving to the next
 3. Where a step shows "Confirm before continuing" — ask that question and wait for a response before proceeding
 4. Save outputs to the file paths specified in each step
-5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/session_log.md`
+5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/reports/session_log.md`
 
 - Keep tone conversational and collaborative; explain why each question matters
 - Use Socratic questioning — don't prescribe problem definitions or solution approaches
 - Engage as a thought partner, present one thought at a time
-- Reads from: `docs/participant_profile.md` — especially `initial_use_case_thoughts` to pick up from where the orientation left off. The participant has captured early thinking about their domain and project interests. Start there and help them develop and land on a concrete project idea.
+- Reads from: `docs/reports/participant_profile.md` — especially `initial_use_case_thoughts` to pick up from where the orientation left off. The participant has captured early thinking about their domain and project interests. Start there and help them develop and land on a concrete project idea.
 
 ---
 
@@ -280,7 +280,7 @@ Create a detailed testing prompt based on the designed solution for use in AI pl
 
 ## Workflow Complete
 
-All steps are complete. Update `docs/session_log.md` with your reflection and commit your changes.
+All steps are complete. Update `docs/reports/session_log.md` with your reflection and commit your changes.
 
 ---
 

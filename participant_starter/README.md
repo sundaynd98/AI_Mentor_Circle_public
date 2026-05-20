@@ -21,10 +21,11 @@ your-project/
 ├── README.md                    ← This file
 │
 ├── docs/                        ← All project context, research, planning, and specs
-│   ├── participant_profile.md   ← Who you are and how you like to work (Session 1)
+│   ├── reports/
+│   │   ├── participant_profile.md   ← Who you are and how you like to work (Session 1)
+│   │   ├── decisions.md             ← Why you made key choices — append-only log
+│   │   └── session_log.md           ← What you did and tried each session — running narrative
 │   ├── problem_definition.md    ← What you're solving and why (Session 2)
-│   ├── decisions.md             ← Why you made key choices — append-only log
-│   ├── session_log.md           ← What you did and tried each session — running narrative
 │   ├── research/                ← User research notes, interview guides (Session 3)
 │   └── specs/                   ← Design specs, UX spec, MVP specs (Sessions 4–5)
 │
@@ -46,7 +47,7 @@ your-project/
 
 | Session | Artifact | Location |
 |---------|----------|----------|
-| 1 | participant_profile.md | docs/ |
+| 1 | participant_profile.md | docs/reports/ |
 | 1 | CLAUDE.md | project root |
 | 2 | problem_definition.md | docs/ |
 | 3 | testing_prompt.md | prompts/ |
@@ -57,7 +58,7 @@ your-project/
 | 4 | user_experience_spec.md | docs/specs/ |
 | 5 | implementation_design.md | docs/ |
 | 5 | mvp_specs.md | docs/specs/ |
-| 5 | session_log.md (build entries) | docs/ |
+| 5 | session_log.md (build entries) | docs/reports/ |
 | 6 | system_specification.md | docs/specs/ |
 
 ---
@@ -65,7 +66,7 @@ your-project/
 ## Key Habits
 
 - **Update CLAUDE.md every session** — it grows with your project
-- **Append to session_log.md at the end of every session** — ask Claude to do it: *"Summarize what we did today and append a new entry to docs/session_log.md"*
+- **Append to session_log.md at the end of every session** — ask Claude to do it: *"Summarize what we did today and append a new entry to docs/reports/session_log.md"*
 - **Log major decisions to decisions.md** — never edit past entries, only append
 - **Connect to GitHub** after Session 1 — first homework
 

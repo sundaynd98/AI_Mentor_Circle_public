@@ -1,6 +1,6 @@
 # [Project Name]
 
-*Full profile: docs/participant_profile.md*
+*Full profile: docs/reports/participant_profile.md*
 
 ---
 
@@ -17,10 +17,10 @@ Example: "I'm a UX designer with 5 years of experience. I'm new to AI developmen
 Start here: Planning
 
 ## Key Files to Read
-- `docs/participant_profile.md` — who I am and how I like to work
+- `docs/reports/participant_profile.md` — who I am and how I like to work
 - `docs/problem_definition.md` — what I'm solving and why (add after Session 2)
-- `docs/decisions.md` — choices made and the reasoning behind them
-- `docs/session_log.md` — what happened in recent sessions
+- `docs/reports/decisions.md` — choices made and the reasoning behind them
+- `docs/reports/session_log.md` — what happened in recent sessions
 
 ## Working Preferences
 [Specific instructions Claude should follow in every conversation]
@@ -39,8 +39,8 @@ Examples:
 
 ## What Claude Should Always Do
 - Ask before making large structural changes
-- APPEND new dated entries to docs/decisions.md — never edit or remove past entries
-- APPEND new entries to docs/session_log.md at the end of each session
+- APPEND new dated entries to docs/reports/decisions.md — never edit or remove past entries
+- APPEND new entries to docs/reports/session_log.md at the end of each session
 - Keep solutions simple — prefer the most straightforward approach
 - Explain what you're doing before writing code for complex tasks
 

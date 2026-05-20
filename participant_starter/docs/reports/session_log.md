@@ -1,7 +1,7 @@
 # Session Log
 
 > Append-only. Add new entries at the bottom. Never edit past entries.
-> At the end of every session, ask Claude: "Summarize what we did today and append a new entry to docs/session_log.md"
+> At the end of every session, ask Claude: "Summarize what we did today and append a new entry to docs/reports/session_log.md"
 
 ---
 

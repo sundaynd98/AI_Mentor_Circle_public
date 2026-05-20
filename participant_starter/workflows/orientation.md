@@ -14,7 +14,7 @@
 2. Complete one step fully before moving to the next
 3. Where a step shows "Confirm before continuing" — ask that question and wait for a response before proceeding
 4. Save outputs to the file paths specified in each step
-5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/session_log.md`
+5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/reports/session_log.md`
 
 - Use Socratic questioning — don't prescribe goals or project ideas
 - The workflow should feel like a friendly onboarding conversation, not a rigid form-filling exercise
@@ -81,7 +81,7 @@ After the conversation, create the participant profile file with these sections:
 - If they don't mention something (like a project idea), write "Still exploring options"
 - Be encouraging and welcoming in tone (this is their first touchpoint)
 
-**Deliver:** Save to `docs/participant_profile.md`. Present what you've written to the participant and invite them to review and suggest any changes before continuing.
+**Deliver:** Save to `docs/reports/participant_profile.md`. Present what you've written to the participant and invite them to review and suggest any changes before continuing.
 
 **User Context:**
 - Provides: Background, experience, and hopes through natural conversation
@@ -128,7 +128,7 @@ After the conversation, create the participant profile file with these sections:
 - **Keep it brief** — 4–5 exchanges max
 - **No judgment** — whether they have 30 minutes a week or several hours, support them
 
-**Deliver:** Append goals to `docs/participant_profile.md` (course_goals, knowledge_domain, success_criteria, time_commitment). Show the participant what was added and invite them to review and suggest any changes before continuing.
+**Deliver:** Append goals to `docs/reports/participant_profile.md` (course_goals, knowledge_domain, success_criteria, time_commitment). Show the participant what was added and invite them to review and suggest any changes before continuing.
 
 **User Context:**
 - Provides: Reflection on what they want to learn and what success looks like
@@ -188,7 +188,7 @@ Reflect back what you hear, but don't lock them in: "It sounds like you might be
 - **No right answers** — any domain and any loop is valid if it's genuinely theirs
 - **Capture loosely** — document what came up, not a polished concept
 
-**Deliver:** Append to `docs/participant_profile.md` (initial_use_case_thoughts: domain they mentioned, loops that resonated, problems they named, anything they're excited about). Show the participant what was captured and invite them to review and suggest any changes before continuing.
+**Deliver:** Append to `docs/reports/participant_profile.md` (initial_use_case_thoughts: domain they mentioned, loops that resonated, problems they named, anything they're excited about). Show the participant what was captured and invite them to review and suggest any changes before continuing.
 
 **User Context:**
 - Provides: Initial reactions to the use case, topics or problems that resonate
@@ -261,7 +261,7 @@ Display an encouraging completion message confirming:
 
 ## Workflow Complete
 
-All steps are complete. Update `docs/session_log.md` with your reflection and commit your changes.
+All steps are complete. Update `docs/reports/session_log.md` with your reflection and commit your changes.
 
 ---
 

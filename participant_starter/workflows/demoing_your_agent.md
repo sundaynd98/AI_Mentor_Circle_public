@@ -14,12 +14,12 @@
 2. Complete one step fully before moving to the next
 3. Where a step shows "Confirm before continuing" — ask that question and wait for a response before proceeding
 4. Save outputs to the file paths specified in each step
-5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/session_log.md`
+5. When you reach the final step, let the participant know the workflow is complete and remind them to update `docs/reports/session_log.md`
 
 - Keep tone collaborative; explain why each choice matters for a confident, engaging demo
 - Use Socratic questioning — don't prescribe demo narratives or presentation approaches
 - Engage as a thought partner in natural conversation, presenting one thought at a time
-- Reads from: `docs/participant_profile.md`, `docs/problem_definition.md`, `docs/implementation_design.md`, `docs/user_research_plan.md`, `docs/architecture_spec.md`, `docs/specs/user_experience_spec.md`, `docs/evaluation_at_scale_design.md`
+- Reads from: `docs/reports/participant_profile.md`, `docs/problem_definition.md`, `docs/implementation_design.md`, `docs/user_research_plan.md`, `docs/architecture_spec.md`, `docs/specs/user_experience_spec.md`, `docs/evaluation_at_scale_design.md`
 
 ---
 
@@ -440,7 +440,7 @@ Once you have a complete script:
 
 ## Workflow Complete
 
-All steps are complete. Update `docs/session_log.md` with your reflection and commit your changes.
+All steps are complete. Update `docs/reports/session_log.md` with your reflection and commit your changes.
 
 ---
 
