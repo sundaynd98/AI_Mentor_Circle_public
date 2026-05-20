@@ -1,7 +1,7 @@
 # Ideation Workflow — Complete Reference
 
 **ID:** ideation
-**Description:** Design your Personal Knowledge and Thinking System — from problem framing to a testable prototype concept
+**Description:** Develop and define your project idea — from initial thinking to a testable prototype concept
 
 ---
 
@@ -19,14 +19,14 @@
 - Keep tone conversational and collaborative; explain why each question matters
 - Use Socratic questioning — don't prescribe problem definitions or solution approaches
 - Engage as a thought partner, present one thought at a time
-- Reads from: `docs/participant_profile.md` — especially `initial_use_case_thoughts` to pick up from where the orientation left off. The participant has already been introduced to the Personal Knowledge and Thinking System use case and has captured early thinking about their domain. Start there, don't re-introduce the concept.
+- Reads from: `docs/participant_profile.md` — especially `initial_use_case_thoughts` to pick up from where the orientation left off. The participant has captured early thinking about their domain and project interests. Start there and help them develop and land on a concrete project idea.
 
 ---
 
 ## Steps
 
 ### Step 1: Frame the problem — current state to desired state
-**Goal:** Help the participant clearly define what their Personal Knowledge and Thinking System is solving for, using the current state → desired state framework
+**Goal:** Help the participant develop their project idea and clearly define what they want to build and what problem it solves, using the current state → desired state framework
 
 Guide the participant through structured problem definition grounded in their knowledge domain and return loop idea.
 
@@ -50,7 +50,7 @@ Guide the participant through structured problem definition grounded in their kn
 
 **User Context:**
 - Provides: Their knowledge domain, how they currently engage with it, what's missing, what the ideal system does
-- Receives: A structured problem definition document grounded in their Personal Knowledge and Thinking System
+- Receives: A structured problem definition document grounded in their chosen domain and project
 
 **Confirm before continuing:** "Does this problem statement capture your challenge and what you want the system to do for you?"
 
@@ -89,7 +89,7 @@ Present assumptions as observations, not criticisms. Ask one challenging questio
 ---
 
 ### Step 3: Generate solution options — different designs for your thinking system
-**Goal:** Explore 3+ distinct designs for the Personal Knowledge and Thinking System at different levels of autonomy
+**Goal:** Explore 3+ distinct designs for the participant's system at different levels of autonomy
 
 Facilitate brainstorming of 3+ distinct system designs, each with a different level of AI involvement.
 

@@ -9,7 +9,7 @@
 You will create two documents in Session 1. They work together:
 
 **`docs/participant_profile.md`**
-Your full profile — the detailed record of who you are, what you're building, how you think, and what you want from this experience. This is the source of truth. You'll add to it throughout the course.
+Your full profile — the detailed record of who you are, what you're building, how you think, and what you want from this experience. This is the context your CLAUDE.md draws from. You'll add to it throughout the course.
 
 **`CLAUDE.md`** (at the root of your project)
 The distilled instructions Claude reads at the start of every conversation. Not a biography — a collaboration contract. Specific, actionable directions Claude can actually follow.
@@ -63,7 +63,7 @@ Save your profile at `docs/participant_profile.md`. Structure:
 
 ## My Project
 [What you're building — this will grow as the course progresses]
-[For now: your initial thinking about your personal knowledge system and return loop]
+[For now: your initial thinking about your project idea and return loop]
 
 ## How I Think
 [How you process information — visual? systematic? exploratory? example-driven?]
@@ -103,7 +103,7 @@ system that helps me synthesize ideas from books and articles. I'm new to AI dev
 
 ## Project Goals
 [Placeholder for Session 2 — update after ideation workflow]
-[For now: "Building a personal knowledge and thinking system with a defined return loop."]
+[For now: "Exploring my project idea — to be defined after the ideation workflow."]
 
 ## Working Preferences
 [Specific instructions Claude should follow every conversation]

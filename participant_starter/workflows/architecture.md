@@ -152,7 +152,7 @@ For each cluster from Step 2, apply this test:
 
 If they have >2 agent candidates:
 - "I see we've identified [N] potential agents"
-- "For a bootcamp project, managing more than 2 agents gets complex quickly"
+- "For a class project, managing more than 2 agents gets complex quickly"
 - "Which ones are most critical for testing your quality risk?"
 - "Can we focus on the top 2 and treat the others as services for now?"
 

@@ -1,7 +1,7 @@
 # Orientation Workflow — Complete Reference
 
 **ID:** orientation
-**Description:** First-time onboarding for bootcamp participants - sets up workspace and gets to know them
+**Description:** First-time onboarding for class participants - sets up workspace and gets to know them
 
 ---
 
@@ -23,8 +23,8 @@
 
 ## Steps
 
-### Step 1: Create complete folder structure for bootcamp participant workspace
-**Goal:** Create complete folder structure for bootcamp participant workspace
+### Step 1: Create complete folder structure for class participant workspace
+**Goal:** Create complete folder structure for class participant workspace
 
 
 **User Context:**
@@ -53,20 +53,20 @@ Start with:
 - Ask follow-up questions based on what they share:
   - If they mention their job: "That sounds interesting—what kind of work do you do day-to-day?"
   - If they mention a project idea: "Tell me more about that. What problem are you trying to solve?"
-  - If they mention learning goals: "What would success look like for you by the end of the bootcamp?"
+  - If they mention learning goals: "What would success look like for you by the end of the class?"
   - If they mention technical background: "Have you worked with AI tools or agents before?"
   - If they mention programming or tools: "What technologies do you currently work with?" or "Are there any specific tools or technologies you're hoping to learn?"
-  - If they mention current tech stack: "What would you like to add to your toolkit during the bootcamp?"
+  - If they mention current tech stack: "What would you like to add to your toolkit during the class?"
 
 **Wrap up naturally after 3-5 exchanges:**
-- "Thanks for sharing that! I have a good sense of where you're coming from. Let's make sure you have a great bootcamp experience."
+- "Thanks for sharing that! I have a good sense of where you're coming from. Let's make sure you have a great class experience."
 
 ## Infer and Structure Information
 
 After the conversation, create the participant profile file with these sections:
 - background (name, role, work context, technical experience level, domain expertise)
 - experience (prior AI/LLM experience, coding skills, familiarity with tools)
-- bootcamp_goals (what they want to learn and accomplish)
+- class_goals (what they want to learn and accomplish)
 - personal_motivation (why they joined, desired outcomes)
 - technical_approach (coding/no-code/exploring preference)
 - current_tech_stack (technologies used day-to-day)
@@ -81,7 +81,7 @@ After the conversation, create the participant profile file with these sections:
 - If they don't mention something (like a project idea), write "Still exploring options"
 - Be encouraging and welcoming in tone (this is their first touchpoint)
 
-**Deliver:** Save to `docs/participant_profile.md`
+**Deliver:** Save to `docs/participant_profile.md`. Present what you've written to the participant and invite them to review and suggest any changes before continuing.
 
 **User Context:**
 - Provides: Background, experience, and hopes through natural conversation
@@ -106,7 +106,7 @@ After the conversation, create the participant profile file with these sections:
 - Ask follow-up: "Is there a specific problem you're hoping this system will solve for you?"
 
 **Anchor to their knowledge domain:**
-- "You'll be building a Personal Knowledge and Thinking System around something you genuinely care about. Do you have a domain or topic in mind already, or are you still figuring that out?"
+- "In this class, you'll build a system around something you genuinely care about. Do you have a domain, topic, or problem in mind already, or are you still figuring that out?"
 - If they have one: "Tell me more about that — what draws you to it?"
 - If not: "No problem — that's part of what Session 2 will help you figure out."
 
@@ -128,8 +128,7 @@ After the conversation, create the participant profile file with these sections:
 - **Keep it brief** — 4–5 exchanges max
 - **No judgment** — whether they have 30 minutes a week or several hours, support them
 
-**Deliver:** Append goals to `docs/participant_profile.md`
-- course_goals, knowledge_domain, success_criteria, time_commitment
+**Deliver:** Append goals to `docs/participant_profile.md` (course_goals, knowledge_domain, success_criteria, time_commitment). Show the participant what was added and invite them to review and suggest any changes before continuing.
 
 **User Context:**
 - Provides: Reflection on what they want to learn and what success looks like
@@ -139,16 +138,14 @@ After the conversation, create the participant profile file with these sections:
 
 ---
 
-### Step 4: Introduce the Use Case and Start Exploring
-**Goal:** Help participant connect the Personal Knowledge and Thinking System use case to something they personally care about
+### Step 4: Introduce the Project Concept and Start Exploring
+**Goal:** Help participant start thinking about what kind of system they want to build and what domain or problem interests them
 
-## Introduce the Use Case
+## Introduce the Project Concept
 
-Present the use case everyone in the course will work from:
+"In this class, you'll design and build a system around something you genuinely care about. The content, the domain, and the design are completely yours.
 
-"Everyone in this course builds the same type of system — but the content, the domain, and the design are completely yours. The use case is a **Personal Knowledge and Thinking System**.
-
-This is not a productivity tool or a task manager. It's a thinking tool — a system that helps you develop ideas, surface connections, and come back to something that matters to you. The system is built around a **return loop**: a reason to come back to it regularly."
+The key constraint is this: **your system needs a reason to come back to it**. Not a productivity tool or a task manager — a thinking tool that helps you develop ideas, surface connections, and engage with something that matters to you. This is called the **return loop**."
 
 ## The Four Loop Examples
 
@@ -191,14 +188,13 @@ Reflect back what you hear, but don't lock them in: "It sounds like you might be
 - **No right answers** — any domain and any loop is valid if it's genuinely theirs
 - **Capture loosely** — document what came up, not a polished concept
 
-**Deliver:** Append to `docs/participant_profile.md`
-- initial_use_case_thoughts (domain they mentioned, loops that resonated, problems they named, anything they're excited about)
+**Deliver:** Append to `docs/participant_profile.md` (initial_use_case_thoughts: domain they mentioned, loops that resonated, problems they named, anything they're excited about). Show the participant what was captured and invite them to review and suggest any changes before continuing.
 
 **User Context:**
 - Provides: Initial reactions to the use case, topics or problems that resonate
 - Receives: The use case framing clearly introduced, their early thinking captured
 
-**Confirm before continuing:** "Does this use case feel like something you could make genuinely yours — even if you're not sure yet exactly what it will be?"
+**Confirm before continuing:** "Do you have enough of a direction to start the ideation workflow — even if it's still rough?"
 
 ---
 
@@ -213,12 +209,12 @@ Using the information from their participant_profile.md, customize the Claude in
 
 1. **Technical Context Adaptation:**
    - Reference their current technical level
-   - Mention their current tech stack and how it relates to bootcamp tools
+   - Mention their current tech stack and how it relates to class tools
    - Highlight their desired tech stack as learning objectives
    - Adjust technical explanations to match their expertise level
 
 2. **Goal-Specific Guidance:**
-   - Reference their specific bootcamp goals and success criteria
+   - Reference their specific class goals and success criteria
    - Customize examples to align with their project domain/interests
    - Include their time commitment and check-in rhythm
 
@@ -232,7 +228,19 @@ Using the information from their participant_profile.md, customize the Claude in
    - Connect instructions to their desired outcomes
    - Use their language and terminology where possible
 
-**Save the personalized CLAUDE.md file** to the workspace directory.
+## Fill In the CLAUDE.md Template
+
+Using what you learned in the conversation, fill in each placeholder section in the CLAUDE.md template:
+
+- **`[Project Name]`** → their project working title (or "Personal Knowledge System" if unnamed)
+- **What This Project Is** → their use case and return loop in 1–2 sentences
+- **My Context** → their background, role, and what they're learning in this course
+- **Working Preferences** → any preferences they expressed during the conversation
+- **Communication Style** → how they communicated and any stated preferences
+- Leave **Current Focus** as: `"Session 1 — Setting up the workspace and writing my CLAUDE.md"`
+- Leave **Things I'm Learning** blank — they'll fill this in after sessions
+
+After saving, tell the participant what was filled in and invite them to review and edit anything that doesn't feel right.
 
 ## Completion Message
 
@@ -247,7 +255,7 @@ Display an encouraging completion message confirming:
 - Provides: Confirmation that all setup steps are complete
 - Receives: Welcome message and guidance for next steps
 
-**Confirm before continuing:** "Are you ready to start using the bootcamp workflows?"
+**Confirm before continuing:** "Are you ready to start using the class workflows?"
 
 ---
 
