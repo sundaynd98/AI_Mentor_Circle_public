@@ -28,20 +28,20 @@
 ### Step 1: Frame the problem — current state to desired state
 **Goal:** Help the participant develop their project idea and clearly define what they want to build and what problem it solves, using the current state → desired state framework
 
-Guide the participant through structured problem definition grounded in their knowledge domain and return loop idea.
+Guide the participant through structured problem definition grounded in their project idea and return loop.
 
 ## Instructions
 
 1. **Start by reading their profile** — specifically `initial_use_case_thoughts` — and reference what they said: "In your orientation, you mentioned [domain/idea]. Let's build from there."
 2. **Ask key questions one at a time** (don't overwhelm):
-   - "What knowledge domain or topic are you building this system around? Tell me more about it."
+   - "What is your project — what are you building, and what problem or idea is it centered on? Tell me more about it."
    - "How do you currently engage with this topic — what does that look like today? What tools or methods are you using?"
    - "What's missing or frustrating about how you engage with it now?"
    - "If this system worked really well for you, what would it actually do for your thinking?"
    - "What kind of return loop are you imagining — what would bring you back to it regularly?"
    - "What constraints should we work within — time, tools available, what you're realistically willing to commit to?"
 3. **If answers are vague, ask follow-up questions** to get specifics
-4. **Frame everything as current state → desired state** — this works for any knowledge domain
+4. **Frame everything as current state → desired state** — this works for any project idea
 
 **Deliver:** Save to `docs/problem_definition.md` with sections:
 - problem_statement, knowledge_domain
@@ -49,7 +49,7 @@ Guide the participant through structured problem definition grounded in their kn
 - desired_state (success_criteria, expected_impact, return_loop_vision, constraints)
 
 **User Context:**
-- Provides: Their knowledge domain, how they currently engage with it, what's missing, what the ideal system does
+- Provides: Their project idea, how they currently approach the problem, what's missing, what the ideal system does
 - Receives: A structured problem definition document grounded in their chosen domain and project
 
 **Confirm before continuing:** "Does this problem statement capture your challenge and what you want the system to do for you?"
@@ -211,7 +211,7 @@ Guide the user to design a simple prompt-based experiment that tests their core 
 - Guide them to pick ONE core assumption to test, not everything at once.
 
 ### 3. Get Them Thinking About Real Examples
-- "Can you give me 3-4 examples from your knowledge domain — the kinds of notes, ideas, or material you'd actually be adding to this system?"
+- "Can you give me 3-4 real examples from your project — the kinds of inputs or material you'd actually be working with in this system?"
 - "What would be a typical piece of content? What would be a tricky or unusual one?"
 - Push for real examples, not hypothetical ones.
 

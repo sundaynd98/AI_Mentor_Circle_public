@@ -105,7 +105,7 @@ After the conversation, create the participant profile file with these sections:
 - Listen for: skill-building, building a specific thing, applying AI to their work, gaining confidence
 - Ask follow-up: "Is there a specific problem you're hoping this system will solve for you?"
 
-**Anchor to their knowledge domain:**
+**Anchor to their project idea:**
 - "In this class, you'll build a system around something you genuinely care about. Do you have a domain, topic, or problem in mind already, or are you still figuring that out?"
 - If they have one: "Tell me more about that — what draws you to it?"
 - If not: "No problem — that's part of what Session 2 will help you figure out."

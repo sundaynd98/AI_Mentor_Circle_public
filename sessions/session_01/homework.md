@@ -1,29 +1,59 @@
 # Session 1 Homework
 
-Complete all three parts before Session 2. Post your reflection to the Teams channel when you're done.
+Complete all four parts before Session 2. Post your reflection to the Teams channel when you're done.
 
 ---
 
-## Part 1: Set Up GitHub
+## Part 1: Set Up Your Project Workspace
 
-Connect your project to version control before you start adding real content.
+Your project starts from a shared starter template — a pre-built folder structure with the workflows, CLAUDE.md, and docs layout already in place.
 
 **Steps:**
+1. Go to `https://github.com/sundaynd98/AI_Mentor_Circle_public` (make sure you're signed into GitHub)
+2. Click the green **"Use this template"** button near the top of the page, next to the "Code" button → select **"Create a new repository"**
+3. Name your repo after your project (e.g., `my-knowledge-system`)
+4. Set visibility to **Public** or **Private** — your choice
+5. Click **"Create repository"**
+6. On your new repo page, click **"Code"** → copy the HTTPS URL
+7. Open Cursor and in the terminal run:
+   ```
+   git clone [your-repo-url]
+   ```
+8. Open the cloned folder in Cursor — this is your project workspace
 
-1. Create a GitHub account if you don't have one (github.com)
-2. Create a new repository for your project
-3. Connect your local project folder to the GitHub repo
-4. Make your first commit — push your workspace structure and CLAUDE.md
+**Why this matters:** The template gives you the right structure from the start — workflows, docs, and CLAUDE.md are already wired up. You're not building from scratch, you're building on a foundation the course is designed around.
+
+> **If you run into trouble:** If you don't see the "Use this template" button, make sure you're signed into GitHub and reload the page. If you get stuck at the cloning step, open Claude Code in an empty folder and type:
+> *"Help me clone https://github.com/sundaynd98/AI_Mentor_Circle_public and set it up as my project in Cursor."*
+
+---
+
+## Part 2: Make Your First Commit and Push
+
+When you cloned the template in Part 1, your local project was already connected to your GitHub repo. Now you just need to verify the connection and make your first commit after you've made changes.
+
+**Steps:**
+1. Make sure you have a GitHub account — you need one to complete Part 1 (github.com)
+2. Open your cloned project folder in Cursor
+3. In the Claude Code terminal, verify your project is connected to your repo:
+   ```
+   git remote -v
+   ```
+   You should see your repo URL listed. If nothing shows, ask Claude Code for help: *"Help me connect this project folder to my GitHub repo."*
+4. After completing Parts 3 and 4, make your first commit and push:
+   ```
+   git add .
+   git commit -m "Initial setup — workspace, CLAUDE.md, and profile"
+   git push
+   ```
 
 **Why this matters:** You're about to start producing real artifacts. Git gives you a safety net and a record of how your thinking evolves.
 
-If you get stuck, ask Claude Code for help: *"Help me connect this project folder to GitHub and make my first commit."*
-
-**Tip - commit fairly often to save changes to local. Then push to your Github repo when ready to save changes there.* 
+**Tip:** Commit often as you work to save changes locally. Push to GitHub when you're ready to save a set of changes there.
 
 ---
 
-## Part 2: Complete the Orientation Workflow
+## Part 3: Complete the Orientation Workflow
 
 If you didn't finish the orientation workflow in session, complete it now.
 
@@ -35,15 +65,15 @@ Work through these steps:
 
 - Background: who you are, your role, technical level, domain expertise
 - Goals: what you want to get out of this course
-- Project idea: your knowledge domain and return loop design
-- Review `docs/participant_profile.md` — Claude generates this from your conversation; update anything that doesn't feel right
+- Project idea: what you want to build and your return loop concept
+- Review `docs/reports/participant_profile.md` — Claude generates this from your conversation; update anything that doesn't feel right
 - Review your `CLAUDE.md` — Claude fills in the placeholders from your profile; edit anything you want to change
 
 **When all steps are done**, the workflow is complete. Your `CLAUDE.md` is the source of truth Claude reads about you — your full profile in `docs/participant_profile.md` is the context it draws from.
 
 ---
 
-## Part 3: Complete the Ideation Workflow
+## Part 4: Complete the Ideation Workflow
 
 Work through the ideation workflow with Claude. Open your project in Cursor, reference the workflow file, and work through each step in order.
 
@@ -68,9 +98,9 @@ Work through the ideation workflow with Claude. Open your project in Cursor, ref
 
 ## Reflection (post to Teams channel)
 
-After completing Parts 2 and 3, write a short reflection (a few sentences to a paragraph for each):
+After completing Parts 3 and 4, write a short reflection (a few sentences to a paragraph for each):
 
-1. **What is your system?** Describe the knowledge domain you chose and the return loop you designed. What triggers a return visit in your system?
+1. **What is your system?** Describe the project idea you chose and the return loop you designed. What triggers a return visit in your system?
 2. **What surprised you** during the ideation workflow? Did your thinking shift at any point?
 3. **One instruction you added to your CLAUDE.md** based on something you learned today — what was it and why?
 
@@ -82,7 +112,7 @@ Post your reflection in the Teams channel before Session 2.
 
 - GitHub connected, first commit made
 - `docs/problem_definition.md` completed (from ideation workflow)
-- `docs/participant_profile.md` complete
+- `docs/reports/participant_profile.md` complete
 - `CLAUDE.md` updated and tested
 - Reflection posted to Teams channel
 

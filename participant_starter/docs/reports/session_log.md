@@ -2,6 +2,13 @@
 
 > Append-only. Add new entries at the bottom. Never edit past entries.
 > At the end of every session, ask Claude: "Summarize what we did today and append a new entry to docs/reports/session_log.md"
+>
+> **Before writing a new entry:** Ask the user these three questions first and wait for their answers:
+> 1. What did you try that didn't work this session?
+> 2. What did you learn?
+> 3. What do you want to focus on next session?
+>
+> Then combine their answers with a summary of what was accomplished, present the full draft for review, and only write it once they approve.
 
 ---
 
