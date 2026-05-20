@@ -32,16 +32,18 @@ Guide the participant through structured problem definition grounded in their pr
 
 ## Instructions
 
-1. **Start by reading their profile** — specifically `initial_use_case_thoughts` — and reference what they said: "In your orientation, you mentioned [domain/idea]. Let's build from there."
-2. **Ask key questions one at a time** (don't overwhelm):
-   - "What is your project — what are you building, and what problem or idea is it centered on? Tell me more about it."
-   - "How do you currently engage with this topic — what does that look like today? What tools or methods are you using?"
+1. **Start by reading their profile** — specifically `initial_use_case_thoughts` — and open with what was already captured: "In your orientation, you mentioned [domain/idea/loop type]. Let's pick up from there and go deeper." Do not re-ask questions the participant already answered. Use what's in the profile as the starting point, not a blank slate.
+2. **Advance the thinking, don't restart it.** Your job is to move from early impressions to a concrete problem definition:
+   - If they named a domain: "You mentioned [domain] — help me understand how you currently engage with it. What does that actually look like day-to-day?"
+   - If they named a friction: "You said [friction] was a pain point — walk me through a specific recent time that happened."
+   - If they named a loop type: "You were drawn to [loop type] — what would that look like for your specific situation?"
+   - If their profile shows 'Still exploring': "Let's start from scratch — is there a topic, problem, or question you keep coming back to?"
+3. **Fill in what's missing** from the orientation capture with targeted questions:
    - "What's missing or frustrating about how you engage with it now?"
    - "If this system worked really well for you, what would it actually do for your thinking?"
-   - "What kind of return loop are you imagining — what would bring you back to it regularly?"
    - "What constraints should we work within — time, tools available, what you're realistically willing to commit to?"
-3. **If answers are vague, ask follow-up questions** to get specifics
-4. **Frame everything as current state → desired state** — this works for any project idea
+4. **If answers are vague, ask follow-up questions** to get specifics
+5. **Frame everything as current state → desired state** — this works for any project idea
 
 **Deliver:** Save to `docs/problem_definition.md` with sections:
 - problem_statement, knowledge_domain
@@ -84,7 +86,7 @@ Present assumptions as observations, not criticisms. Ask one challenging questio
 - Provides: Their validation of identified assumptions and defense of constraints
 - Receives: Categorized assumptions — validated constraints vs flexible beliefs
 
-**Confirm before continuing:** "Are these the right assumptions to question?"
+**Confirm before continuing:** "Are these the right assumptions to question? Or did we miss anything important?"
 
 ---
 
@@ -101,20 +103,21 @@ Facilitate brainstorming of 3+ distinct system designs, each with a different le
 
 ## Instructions
 
-1. **Enforce diversity** — don't settle on first idea, push for at least 3 distinct solutions
-2. **Use the autonomy spectrum** to guide different approaches across levels
-3. **For each solution, define clearly**:
+1. **Generate three directional options yourself** — propose one design at each autonomy level as starting points and recommendations, not a final menu. Present them clearly, then ask: "Do any of these feel close to what you're imagining? What would you change, add, or combine?"
+2. **Incorporate their feedback before finalizing** — if they push back, refine, or propose something different, explore it. Update or add options based on their input before moving to documentation.
+3. **Use the autonomy spectrum** to guide different approaches across levels
+4. **For each solution, define clearly**:
    - What the AI agent does autonomously
    - Where human input is required
    - How they interact (chat-based, scheduled check-ins, exception-triggered)
-4. **Clarify scope boundaries** for each solution:
+5. **Clarify scope boundaries** for each solution:
    - What it does (clear description)
    - What it doesn't do (stays manual/out of scope)
    - Human touchpoints (when and how human is in the loop)
-5. **Document all solution hypotheses** with different autonomy levels
-6. **Confirm all hypotheses** with user before moving to selection
+6. **Document all solution hypotheses** with different autonomy levels
+7. **Confirm all hypotheses** with user before moving to selection
 
-Push for diversity across autonomy levels. If solutions sound too similar, challenge: "How is this different from the previous approach?"
+If their feedback leads to solutions that are too similar across levels, prompt: "How is this one different from the previous in terms of how much the AI does on its own?"
 
 **Deliver:** Append to `docs/problem_definition.md` with section:
 - solution_hypotheses (Hypothesis 1, 2, 3 — each with: Name, autonomy level, what AI does autonomously, human touchpoints, interaction pattern, scope boundaries)
@@ -235,7 +238,9 @@ Guide the user to design a simple prompt-based experiment that tests their core 
 - Provides: Real data examples, access to AI tools, time for testing (2-4 hours)
 - Receives: A prompt-based experiment plan to test AI capabilities with mock data
 
-**Confirm before continuing:** "Do you have the mock data and can you complete this testing?"
+**Confirm before continuing:** "Do you have the mock data to complete this testing?"
+
+If they say **no**: Help them figure out what data they need and how to get it. Ask: "What kind of content would this system actually work with — can you find 3–4 real examples right now?" Guide them to identify existing material they already have access to (past notes, saved articles, emails, documents) or a simple way to create representative examples. Don't move on until they have a concrete plan for getting the data.
 
 ---
 
@@ -275,6 +280,16 @@ Create a detailed testing prompt based on the designed solution for use in AI pl
 - Receives: A ready-to-use prompt for testing the solution in AI playgrounds
 
 **Confirm before continuing:** "Does this prompt capture your solution concept for testing?"
+
+## What Comes Next
+
+Your homework before Session 3 is to run the experiment you designed in Step 5:
+1. Copy your testing prompt from `prompts/testing_prompt.md`
+2. Paste it into an AI playground (ChatGPT, Claude.ai, or OpenAI Playground)
+3. Test it with the real examples you identified
+4. Note what worked, what surprised you, and where it fell short
+
+Bring your findings to Session 3. What you learn from this test will shape your prototype design in the next workflow.
 
 ---
 

@@ -23,22 +23,8 @@
 
 ## Steps
 
-### Step 1: Create complete folder structure for class participant workspace
-**Goal:** Create complete folder structure for class participant workspace
-
-
-**User Context:**
-- Provides: Current working directory location
-- Receives: Complete workspace folder structure
-
-**Confirm before continuing:** "Can you see the workspace folder with all subdirectories?"
-
----
-
-### Step 2: Have natural conversation to understand who the participant is and what they're hoping to achieve
+### Step 1: Have natural conversation to understand who the participant is and what they're hoping to achieve
 **Goal:** Have natural conversation to understand who the participant is and what they're hoping to achieve
-
-
 
 ## Conversational Profile Discovery
 
@@ -91,7 +77,7 @@ After the conversation, create the participant profile file with these sections:
 
 ---
 
-### Step 3: Set Goals for the Course
+### Step 2: Set Goals for the Course
 **Goal:** Help participant articulate what they want to learn and what success looks like for them personally
 
 ## Conversational Goal Setting
@@ -138,7 +124,7 @@ After the conversation, create the participant profile file with these sections:
 
 ---
 
-### Step 4: Introduce the Project Concept and Start Exploring
+### Step 3: Introduce the Project Concept and Start Exploring
 **Goal:** Help participant start thinking about what kind of system they want to build and what domain or problem interests them
 
 ## Introduce the Project Concept
@@ -196,12 +182,12 @@ Reflect back what you hear, but don't lock them in: "It sounds like you might be
 
 **Confirm before continuing:** "Do you have enough of a direction to start the ideation workflow — even if it's still rough?"
 
+If they say **no**: Don't move on yet. Ask: "What feels unclear or unresolved?" Then explore one more angle together — try a different loop example, ask about a problem they keep bumping into at work, or ask what they'd spend more time thinking about if they had the space. The goal isn't a decided idea, just enough spark to start the next session. Once they have even a loose direction, confirm again.
+
 ---
 
-### Step 5: Complete orientation by creating personalized Claude instructions and welcome message
+### Step 4: Complete orientation by creating personalized Claude instructions and welcome message
 **Goal:** Complete orientation by creating personalized Claude instructions and welcome message
-
-
 
 ## Personalize Claude Instructions
 
@@ -255,7 +241,7 @@ Display an encouraging completion message confirming:
 - Provides: Confirmation that all setup steps are complete
 - Receives: Welcome message and guidance for next steps
 
-**Confirm before continuing:** "Are you ready to start using the class workflows?"
+**Confirm before continuing:** "You're all set — are you ready to start the ideation workflow and shape your project idea?"
 
 ---
 
@@ -269,5 +255,5 @@ All steps are complete. Update `docs/reports/session_log.md` with your reflectio
 
 | File | Location | Description |
 |------|----------|-------------|
-| `participant_profile.md` | `docs/` | Full participant profile with background, goals, project idea |
+| `participant_profile.md` | `docs/reports/` | Full participant profile with background, goals, project idea |
 | `CLAUDE.md` | `/` | Personalized Claude instructions |
