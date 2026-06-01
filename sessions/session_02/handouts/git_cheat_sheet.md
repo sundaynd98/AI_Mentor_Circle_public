@@ -33,7 +33,7 @@ You can pack the box over time before sealing it. Sealed boxes sit in your house
 | `git commit -m "note"` | Save a labeled snapshot of staged changes |
 | `git commit -am "note"` | Stage all modified files + commit in one step (see note below) |
 | `git push` | Send local commits to GitHub |
-| `git pull` | Get the latest changes from GitHub |
+| `git fetch` | Download the latest changes from GitHub (without changing your files yet) |
 | `cd <folder>` | Navigate into a folder |
 | `ls` | List files in the current folder |
 
@@ -88,7 +88,7 @@ If your project doesn't have a `.gitignore` yet, ask Claude:
 
 ```bash
 # At the start of a session
-git pull                          # get any changes from GitHub
+git fetch                         # download any changes from GitHub (doesn't touch your files)
 
 # While working — commit often
 git status                        # see what changed
@@ -98,3 +98,41 @@ git commit -m "what I did"        # save a snapshot
 # When ready to save to GitHub
 git push                          # send commits to GitHub
 ```
+
+> **Note:** `git fetch` *downloads* changes but never touches your files — it can't overwrite your work. `git push` is still how you save your own work to your repo.
+
+---
+
+## Getting course updates into your project
+
+Your project and the course repo are separate (you made yours from a template), so course updates — new or revised workflows, handouts, and session files — don't arrive on their own. Here's the full, safe way to bring them in.
+
+**1. One-time setup — connect the course repo as a remote named `course`:**
+
+```powershell
+git remote add course https://github.com/sundaynd98/AI_Mentor_Circle_public.git
+```
+
+Run this once. Confirm it worked with `git remote -v` — you should see `course` listed alongside `origin`.
+
+**2. Download the latest course files:**
+
+```powershell
+git fetch course
+```
+
+This downloads everything new from the course repo without changing any of your files yet.
+
+**3. Bring the new and updated files in — let Claude Code do this so your own work isn't overwritten.** You've personalized some files (your root `CLAUDE.md`, your `docs/`, your `prompts/`), so don't blanket-overwrite. Ask Claude Code:
+
+> "I just ran `git fetch course`. Compare `course/main` against my project and bring in every new or updated course file — especially anything in `workflows/` and any new `sessions/` materials — but don't overwrite files I've personalized (my root `CLAUDE.md`, `docs/`, `prompts/`). List what changed before we commit."
+
+**4. Save the updates to your repo:**
+
+```powershell
+git add .
+git commit -m "Bring in latest course updates"
+git push
+```
+
+Do this whenever you're told a course file has changed (or at the start of a session, to be safe).
