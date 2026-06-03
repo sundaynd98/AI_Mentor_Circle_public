@@ -111,6 +111,10 @@ git push
 
 Do this whenever you're told a course file has changed (or at the start of a session, to be safe).
 
+**5. OR create a skill to do this at the beginning of each class session:**
+
+[enter info about skill here - TBD]
+
 ---
 
 ## Tips
