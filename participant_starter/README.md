@@ -136,6 +136,14 @@ git commit -m "Add course-sync skill"
 git push
 ```
 
+**Note — a new skill won't show up until you restart.** Claude Code discovers skills at session startup, so the normal flow is:
+
+1. Create or edit the skill file (`.claude/skills/<name>/SKILL.md`)
+2. Start a new session (or run `/clear`)
+3. The skill now appears in the list and you can invoke it
+
+So after you and Claude finish writing the skill, start a fresh session before trying to use it.
+
 ---
 
 ## Tips
