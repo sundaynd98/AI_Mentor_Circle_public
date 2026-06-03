@@ -120,7 +120,6 @@ git push
 
 Do this whenever you're told a course file has changed (or at the start of a session, to be safe).
 
-<<<<<<< HEAD
 ### Option 2 — Create a skill to do it for you
 
 If you sync often, you can have Claude Code turn this whole process into a reusable *skill* — so you just say "sync the latest course updates" each session instead of repeating the steps above.
@@ -136,10 +135,6 @@ git add .claude/skills
 git commit -m "Add course-sync skill"
 git push
 ```
-=======
-**5. OR create a skill to do this at the beginning of each class session:**
-
->>>>>>> d85c65f436c148c8646c9cf3c72a384e4aba133b
 
 ---
 
