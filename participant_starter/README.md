@@ -47,24 +47,26 @@ your-project/
 ## Artifacts You'll Produce (and where they go)
 
 
-| When        | Artifact                       | Location       |
-| ----------- | ------------------------------ | -------------- |
-| S1 homework | participant_profile.md         | docs/reports/  |
-| S1 homework | CLAUDE.md                      | project root   |
-| S1 homework | problem_definition.md          | docs/          |
-| S1 homework | testing_prompt.md              | prompts/       |
-| S2 homework | evaluation_design_report.md    | docs/          |
-| S2 homework | evaluations_data.csv           | data/          |
-| S2 homework | spike/                         | docs/research/ |
-| S3 homework | user_research_plan.md          | docs/          |
-| S3 homework | interview_analysis_prompt.txt  | prompts/       |
-| S3 homework | user_research_findings.md      | docs/          |
-| S4 homework | implementation_design.md       | docs/          |
-| S4 homework | poc_specs.md                   | docs/specs/    |
-| S4 homework | first UI (on your POC)         | src/           |
-| S5 homework | context_architecture_design.md | docs/          |
-| S5 homework | user_experience_spec.md        | docs/specs/    |
-| S6 homework | evaluation_at_scale_design.md  | docs/          |
+| When        | Artifact                                | Location       |
+| ----------- | --------------------------------------- | -------------- |
+| S1 homework | participant_profile.md                  | docs/reports/  |
+| S1 homework | CLAUDE.md                               | project root   |
+| S1 homework | problem_definition.md                   | docs/          |
+| S1 homework | testing_prompt.md                       | prompts/       |
+| S2 homework | evaluation_design_report.md             | docs/          |
+| S2 homework | evaluations_data.csv                    | data/          |
+| S2 homework | spike/                                  | docs/research/ |
+| S3 homework | user_research_plan.md                   | docs/          |
+| S3 homework | interview_analysis_prompt.txt           | prompts/       |
+| S3 homework | user_research_findings.md               | docs/          |
+| S3 homework | implementation_design.md                | docs/          |
+| S3 homework | poc_specs.md                            | docs/specs/    |
+| S3 homework | app shell (scaffolded, empty)           | src/           |
+| S4 homework | built POC + first UI                    | src/           |
+| S5 homework | context_architecture_design.md          | docs/          |
+| S5 homework | user_experience_spec.md                 | docs/specs/    |
+| S5 homework | UI polish (applied to your interface)   | src/           |
+| S6 homework | deployment_design.md                    | docs/          |
 
 
 *Most project work now happens in homework, driven by the workflows (~2 per week). "When" tracks the session whose homework first produces each artifact. Sessions 3–6 are being finalized to the new format, so a few rows may still shift.*
