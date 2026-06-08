@@ -26,45 +26,48 @@ your-project/
 │   │   ├── decisions.md             ← Why you made key choices — append-only log
 │   │   └── session_log.md           ← What you did and tried each session — running narrative
 │   ├── problem_definition.md    ← What you're solving and why (Session 2)
-│   ├── research/                ← User research notes, interview guides (Session 3)
-│   └── specs/                   ← Design specs, UX spec, MVP specs (Sessions 4–5)
+│   ├── research/                ← Spike research (S2 homework) + user research notes (S3)
+│   └── specs/                   ← UX spec and POC specs (Sessions 4–5)
 │
-├── prompts/                     ← Prompt templates you write and refine (Sessions 3–4)
+├── prompts/                     ← Prompt templates you write and refine (Sessions 2–4)
 │
 ├── workflows/                   ← Course workflow guides — reference with @workflows/[name].md
 │
-└── src/                         ← Your source code — add this when you start building (Session 5+)
+└── src/                         ← Your source code — add this when you start building (Session 4+)
 ```
 
 **Phase 2 folders (add when you need them):**
-- `src/` — add when starting the POC build (Session 5)
+
+- `src/` — add when you start the POC build (Session 4 homework)
 - `data/` — add when you need to mock or store structured data
-- `docs/eval/` — add for evaluation reports (Session 3–4)
+- `docs/eval/` — add for evaluation reports (Sessions 2–3 and 6)
 
 ---
 
 ## Artifacts You'll Produce (and where they go)
 
-| Session | Artifact | Location |
-|---------|----------|----------|
-| 1 | participant_profile.md | docs/reports/ |
-| 1 | CLAUDE.md | project root |
-| 1 | problem_definition.md | docs/ |
-| 1 | testing_prompt.md | prompts/ |
-| 2 (homework) | evaluation_design_report.md | docs/ |
-| 2 (homework) | evaluations_data.csv | data/ |
-| 2 (homework) | spike/ | docs/research/ |
-| 3 | user_research_plan.md | docs/ |
-| 3 | interview_analysis_prompt.txt | prompts/ |
-| 4 | evaluation_at_scale_design.md | docs/ |
-| 4 | llm_as_judge_prompt.txt | prompts/ |
-| 4 | user_experience_spec.md | docs/specs/ |
-| 5 | implementation_design.md | docs/ |
-| 5 | mvp_specs.md | docs/specs/ |
-| 6 | architecture_spec.md | docs/specs/ |
-| 6 | context_management_design.md | docs/ |
 
-*Session numbers track when each artifact is first produced. The evaluation set (report, CSV, spike) is now front-loaded into Session 2 homework; the Session 3 column may shift slightly as that plan is finalized.*
+| When        | Artifact                       | Location       |
+| ----------- | ------------------------------ | -------------- |
+| S1 homework | participant_profile.md         | docs/reports/  |
+| S1 homework | CLAUDE.md                      | project root   |
+| S1 homework | problem_definition.md          | docs/          |
+| S1 homework | testing_prompt.md              | prompts/       |
+| S2 homework | evaluation_design_report.md    | docs/          |
+| S2 homework | evaluations_data.csv           | data/          |
+| S2 homework | spike/                         | docs/research/ |
+| S3 homework | user_research_plan.md          | docs/          |
+| S3 homework | interview_analysis_prompt.txt  | prompts/       |
+| S3 homework | user_research_findings.md      | docs/          |
+| S4 homework | implementation_design.md       | docs/          |
+| S4 homework | poc_specs.md                   | docs/specs/    |
+| S4 homework | first UI (on your POC)         | src/           |
+| S5 homework | context_architecture_design.md | docs/          |
+| S5 homework | user_experience_spec.md        | docs/specs/    |
+| S6 homework | evaluation_at_scale_design.md  | docs/          |
+
+
+*Most project work now happens in homework, driven by the workflows (~2 per week). "When" tracks the session whose homework first produces each artifact. Sessions 3–6 are being finalized to the new format, so a few rows may still shift.*
 
 ---
 
@@ -126,7 +129,7 @@ If you sync often, you can have Claude Code turn this whole process into a reusa
 
 The best way to learn this is to let Claude work out the details with you. Paste a prompt like this into Claude Code and take it from there:
 
-> I keep needing to pull new and updated files from the course repo (a remote named `course` or `public`) into my project. Because I copied my project from the template, I have to be careful not to overwrite the work I've personalized. Help me create a reusable skill that does this safely — ask me whatever you need about my repo, figure out the right git approach, and save it as a project skill under `.claude/skills/`.
+> I created my project from this public Github repo [https://github.com/sundaynd98/AI_Mentor_Circle_public.git](https://github.com/sundaynd98/AI_Mentor_Circle_public.git) using "use as template". I need to fetch any new files to add to my project and include any updates from updated files into my project files. I want to be careful not to overwrite the work I've personalized in my files. Help me create a reusable skill that does this safely — ask me whatever you need about my repo, figure out the right git approach, and save it as a project skill under `.claude/skills/`. 
 
 Work through it together: Claude will inspect your repo, propose an approach, and write the skill file for you. When you're happy with it, commit it so it stays with your project:
 
@@ -149,5 +152,7 @@ So after you and Claude finish writing the skill, start a fresh session before t
 ## Tips
 
 Ask Claude to help with any of this:
+
 - *"Help me write my participant_profile.md"*
 - *"Append a session log entry for what we just did"*
+
