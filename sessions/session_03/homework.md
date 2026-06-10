@@ -62,7 +62,9 @@ You don't need to set up any new APIs or MCPs yet — your one project-specific 
 
 **b) Scaffold your app shell** — have Claude Code generate the empty starter app: a Next.js + TypeScript project with Tailwind + shadcn/ui set up, a placeholder home page, and the Supabase client wired to your `.env.local`, running locally (`npm run dev`). **No features yet — just a blank app that runs.** A good prompt:
 
-> "Scaffold an empty app shell for my project on the common stack: Next.js + TypeScript, Tailwind + shadcn/ui initialized with a couple of base components, a placeholder home page, and the Supabase client wired to my `.env.local`. Get it running locally with `npm run dev` — no features yet, just a clean starting point I'll build on in Session 4."
+> "Scaffold an empty app shell for my project on the common stack: the **latest stable** Next.js (not a canary or release candidate) with TypeScript, Tailwind + shadcn/ui initialized with a couple of base components, a placeholder home page, and the Supabase client wired to my `.env.local`. Get it running locally with `npm run dev` — no features yet, just a clean starting point I'll build on in Session 4."
+
+> **If Claude flags an unstable version:** sometimes the scaffolding tools pull a Next.js canary or release candidate that isn't fully stable. If Claude notices this and offers to move you to the latest stable version, let it — that's expected and the right call.
 
 **c) Check how your Supabase client got wired** — read the handout **`handouts/supabase_security.md`** first, then verify the scaffold used the class's **server-side** approach, not Claude's default. Left to its default, Claude wires Supabase with the **`anon` key in the browser** (the standard tutorial setup), which is a different, more advanced path. For this class we want the Supabase client created **server-side** with the `service_role` key, with RLS left on. Ask Claude to audit and fix it if needed:
 
