@@ -33,8 +33,8 @@ Open `@workflows/first_deployment.md` and work through it with Claude. Five step
 1. **Ground in learning goals** — why your own testing hides your quality risk, and what deployment will show you that testing can't.
 2. **Testers, commitments, and the feedback loop** — 5–10 named people with real commitments (not "some people, probably"). Then **wire the feedback loop**: decide where a tester's reaction (accept/edit/reject) actually lands in the feedback mechanism you built — and if it was never wired, close that gap in `src/` now, even minimally. Plant the return-loop question for the test window: *did anyone come back unprompted?*
 3. **What must work without you** — ruthless minimalism; manual is fine for a pilot, just name what's staying manual.
-4. **Map onto the class stack** — your app deploys to **Vercel**; the workflow walks delivery, runtime, data/access (the Case A/B check from Session 4's Supabase handout), integrations, and the big gotcha: **keys in `.env.local` don't deploy** — every key must also be set in Vercel → Settings → Environment Variables.
-5. **Write the deployment specs and ship** — `docs/specs/deployment_specs.md` is your second (and final) implementation-ready spec, alongside `poc_specs.md`. Then deploy from it and send your testers the link.
+4. **Map onto the class stack** — your app deploys to **Vercel**; the workflow walks delivery, runtime, data/access (the Case A/B check from Session 4's Supabase handout), integrations, and the big gotcha: **keys in `.env.local` don't deploy** — every key must also be set in Vercel → Settings → Environment Variables. The workflow walks the exact clicks for this.
+5. **Write the deployment specs and ship** — `docs/specs/deployment_specs.md` is your second (and final) implementation-ready spec, alongside `poc_specs.md`. Then deploy from it, open the live app yourself and try it like a tester would, and send testers the **permanent project link** — not the one-off link tied to that specific deploy, which stops working once you deploy again.
 
 **Output:** `docs/deployment_design.md` + `docs/specs/deployment_specs.md` + your app live at its Vercel URL, with testers invited.
 

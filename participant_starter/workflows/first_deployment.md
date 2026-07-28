@@ -332,8 +332,15 @@ For each external connection the system uses (their data source, an external API
 **Keys in `.env.local` do not deploy.** This is the Session 4 `api_keys_reference.md` gotcha, and it's the most common first-deploy failure:
 
 - Every key the app uses locally — `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, and any integration keys — must **also** be added in Vercel: **Project → Settings → Environment Variables**.
-- **Before setting them, sort each key by its `NEXT_PUBLIC_` prefix — it's not a naming convention, it's what decides whether the key ships to every visitor's browser.** `NEXT_PUBLIC_`-prefixed keys (e.g. `NEXT_PUBLIC_SUPABASE_URL`) are safe to expose. Everything without that prefix (`ANTHROPIC_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, any integration key) must stay server-only — never rename one to add the prefix "to make it work." Walk your own key list and confirm which is which before entering them in Vercel.
+- **Before setting them, sort each key by its `NEXT_PUBLIC_` prefix.** This prefix isn't just a naming style — it decides whether the key gets sent to every visitor's browser. `NEXT_PUBLIC_`-prefixed keys (e.g. `NEXT_PUBLIC_SUPABASE_URL`) are safe to expose. Everything without that prefix (`ANTHROPIC_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, any integration key) must stay server-only — never rename one to add the prefix "to make it work." Walk your own key list and confirm which is which before entering them in Vercel.
 - Never hardcode keys, never commit them to git — same rule as always, now with a public repo/URL at stake.
+
+**How to get your keys into Vercel:**
+1. In the Vercel dashboard, open your project → **Settings → Environment Variables**.
+2. For each key in your `.env.local` file, copy its name and value into Vercel one at a time, and set it for the **Production** environment.
+3. Trigger a new deploy (push to `main`, or click **Redeploy** in the dashboard). Environment variables only take effect on deploys made *after* you add them — a deploy that already ran won't pick up a key you just added.
+
+*(If you're deploying from the command line instead of connecting your GitHub repo — most participants won't need this, since connecting GitHub in Step 4 handles it for you — a few terms worth knowing: `vercel login` signs you in from your terminal by opening a browser window; `vercel link` connects your project folder to a project on Vercel; `vercel --prod` builds and publishes it. One thing to expect: running `vercel link` adds a line to your `.env.local` called `VERCEL_OIDC_TOKEN` on its own. That's normal — it's Vercel's own login token, not one of your app's keys — but it can look like a mistake if you don't know it's coming.)*
 
 ### 6. Cost Reality Check
 
@@ -391,10 +398,10 @@ From step 4's deployment mapping, provide implementation details:
 **Vercel deployment:**
 - How the deploy happens: connect the GitHub repo to Vercel (deploys on every push to main) — or `npx vercel` from the project if not using the Git integration
 - **Environment variables to set in Vercel** (Project → Settings → Environment Variables): list each one with a one-line description — `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, plus any integration keys. These must match what's in `.env.local`. Mark each as `NEXT_PUBLIC_` (browser-exposed) or server-only in the spec — this is the distinction to get right from Step 4, not something to re-decide here.
-- Health check: open the production URL and run one real slice end-to-end
+- **Health check: open the app yourself in a browser and try one real task, start to finish — don't check it with an automated tool.** A command-line check (like `curl`, a tool that fetches a page's raw code without opening a real browser) can be misleading here: Next.js's page code always contains some placeholder text that looks like an error message, even on pages that are working fine — so a script scanning for error text can get it wrong. And anything that submits a form or clicks a button that talks to the server needs an actual click in a real browser to test properly. Just open the link and use the app the way a tester would.
 
 **Delivery mechanism:**
-- The deployed web app itself — its deployment is the Vercel block above; record the production URL testers will use
+- The deployed web app itself — its deployment is the Vercel block above. **Vercel actually gives you two different links: a one-off link for that exact deploy (it changes every time you deploy again), and one permanent link for your project** (like `yourproject.vercel.app`, or a custom domain if you set one up) **that always shows the latest version.** Give testers the permanent link — the one-off link will stop working the moment you deploy again.
 - Any extra touchpoint from step 4 (an email digest, a shared doc) and how it reaches testers — manual is fine, name it under "staying manual" below
 
 **Data persistence (Supabase):**
