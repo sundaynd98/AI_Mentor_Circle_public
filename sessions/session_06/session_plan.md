@@ -71,10 +71,14 @@ Live in Claude Code on a sample POC.
 
 **B. First deployment — `first_deployment` (~15 min)** *(`@workflows/first_deployment.md`)*
 - **Frame it: your closed-loop feedback gets its first real data — and your return loop gets its honest test.** The testers *are* the feedback source.
-- **Why deploy at all** — your own testing hides your quality risk (you spot the hallucinations, you stay inside safe boundaries, you format inputs carefully). Strangers don't. Deployment shows you what your testing can't.
-- **Scope a minimal deployment to 5–10 real testers** — ruthless about scope, manual where possible. Named commitments, not "some people."
-- **Wire the feedback loop before deploying** — where does a tester's reaction (accept/edit/reject) actually land? If the closed-loop mechanism was never wired, close that gap now, even minimally. And plant the return-loop question: *did anyone come back unprompted?*
-- **Map onto the class stack** — the app deploys to Vercel; the one gotcha to demo: **keys in `.env.local` don't deploy** — every key must also be added in Vercel → Settings → Environment Variables (callback to S4's `api_keys_reference.md`).
+- **Talk through, don't demo (Steps 1–3 — no time to run these live):**
+  - Why deploy at all — your own testing hides your quality risk (you spot the hallucinations, you stay inside safe boundaries, you format inputs carefully). Strangers don't. Deployment shows you what your testing can't.
+  - Scope a minimal deployment to 5–10 real testers — ruthless about scope. Named commitments, not "some people."
+  - Wire the feedback loop before deploying — where does a tester's reaction (accept/edit/reject) actually land? If the closed-loop mechanism was never wired, close that gap now, even minimally. Plant the return-loop question: *did anyone come back unprompted?*
+  - What must work without you present — ruthless minimalism; manual is fine for a pilot, just name what's staying manual.
+- **Demo live on the sample POC (Step 4, and Step 5 parts 1–3 — stop before the checklist/known-limitations write-up):**
+  - **Step 4 — map onto the class stack:** delivery mechanism, runtime check, data/access, integrations. The one gotcha to actually show: **keys in `.env.local` don't deploy** — every key must also be added in Vercel → Settings → Environment Variables (callback to S4's `api_keys_reference.md`).
+  - **Step 5, parts 1–3 — draft the deployment specs:** deployment context summary, infrastructure specifications, access & monitoring. Stop there — the deployment checklist and known-limitations sections are left for participants to finish themselves in homework.
 
 ### Homework Walkthrough + Q&A (~20 min)
 

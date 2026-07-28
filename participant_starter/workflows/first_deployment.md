@@ -332,6 +332,7 @@ For each external connection the system uses (their data source, an external API
 **Keys in `.env.local` do not deploy.** This is the Session 4 `api_keys_reference.md` gotcha, and it's the most common first-deploy failure:
 
 - Every key the app uses locally — `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, and any integration keys — must **also** be added in Vercel: **Project → Settings → Environment Variables**.
+- **Before setting them, sort each key by its `NEXT_PUBLIC_` prefix — it's not a naming convention, it's what decides whether the key ships to every visitor's browser.** `NEXT_PUBLIC_`-prefixed keys (e.g. `NEXT_PUBLIC_SUPABASE_URL`) are safe to expose. Everything without that prefix (`ANTHROPIC_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, any integration key) must stay server-only — never rename one to add the prefix "to make it work." Walk your own key list and confirm which is which before entering them in Vercel.
 - Never hardcode keys, never commit them to git — same rule as always, now with a public repo/URL at stake.
 
 ### 6. Cost Reality Check
@@ -389,7 +390,7 @@ From step 4's deployment mapping, provide implementation details:
 
 **Vercel deployment:**
 - How the deploy happens: connect the GitHub repo to Vercel (deploys on every push to main) — or `npx vercel` from the project if not using the Git integration
-- **Environment variables to set in Vercel** (Project → Settings → Environment Variables): list each one with a one-line description — `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, plus any integration keys. These must match what's in `.env.local`.
+- **Environment variables to set in Vercel** (Project → Settings → Environment Variables): list each one with a one-line description — `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY`, plus any integration keys. These must match what's in `.env.local`. Mark each as `NEXT_PUBLIC_` (browser-exposed) or server-only in the spec — this is the distinction to get right from Step 4, not something to re-decide here.
 - Health check: open the production URL and run one real slice end-to-end
 
 **Delivery mechanism:**
