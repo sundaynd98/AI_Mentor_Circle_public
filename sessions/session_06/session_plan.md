@@ -9,7 +9,7 @@
 - **Format:** Debrief/share → technical demo → homework walkthrough
 - **Session theme: the loops, at scale.** Both demos are loops the participants already built, getting bigger: LLM-as-judge is the **agent-validation loop** with a cheaper reviewer; deploying to real testers is the **closed-loop feedback** loop getting its first real data (and the honest test of the **user return loop**).
 
-> **🗒️ Load note:** this session's homework is internally uneven — `evaluating_for_scale` is light and reflective; `first_deployment` is the heavy lift. If a participant is behind, deployment can spill into the optional Session 7 window; the eval part shouldn't slip.
+> **🗒️ Load note:** this session's homework is internally uneven — `evaluating_for_scale` is light and reflective; `first_deployment` is the heavy lift. This is the last session, so there's no next-session window to spill into — if a participant is behind, it's fine for deployment to take an extra day or two after the program ends; the eval part shouldn't slip.
 
 ## Learning Objectives
 
@@ -89,8 +89,8 @@ Live in Claude Code on a sample POC.
 
 ### Closing (≤5 min)
 
-- Reminder to run `/wrap-up` at the end of the homework to log `session_log.md` + `decisions.md`.
-- Preview the optional **Session 7**: demos only (`demoing_your_agent`) — show what you built, hear how everyone's deployment went, and share reflections from this final homework.
+- Reminder to run `/wrap-up` at the end of the homework to log `session_log.md` + `decisions.md` — this is the final entry.
+- **This is the last session of the program.** Name what they're leaving with: a deployed app, a full toolbelt, and an updated `CLAUDE.md`. Point at homework Part 4, `demoing_your_agent` — optional, self-paced, a leave-behind for whenever they're ready to actually show this project to someone (a hiring manager, coworkers, a portfolio site).
 
 ## Artifacts Produced (in homework)
 
@@ -100,7 +100,8 @@ Live in Claude Code on a sample POC.
 - The deployed app at its Vercel URL, in front of 5–10 testers
 - An updated, cleaned-up `CLAUDE.md` (the retrospective)
 - The final **workflow cards** in `workflows/cards/` — Evaluation and Improvement, Pilot With Users, and a **Loops Audit** critique card — completing the toolbelt started in S5
+- Optional: `docs/demo_plans.md` — a demo outline, whenever they run the Part 4 leave-behind
 
 ## Homework
 
-See `homework.md`. Planned shape (~4.5–5.5 hrs): **Part 1** evaluate for scale (second measurement + AI judge + 100× reflection) → **Part 2** first deployment (wire feedback, map onto Vercel, ship to 5–10 testers) → **Part 3** CLAUDE.md retrospective + complete the toolbelt (extract the final cards: Evaluation and Improvement, Pilot With Users, Loops Audit).
+See `homework.md`. Planned shape (~4.5–5.5 hrs): **Part 1** evaluate for scale (second measurement + AI judge + 100× reflection) → **Part 2** first deployment (wire feedback, map onto Vercel, ship to 5–10 testers) → **Part 3** CLAUDE.md retrospective + complete the toolbelt (extract the final cards: Evaluation and Improvement, Pilot With Users, Loops Audit) → **Part 4** (optional, not in the time total) prepare a demo with `demoing_your_agent`, a self-paced leave-behind for showing this project off later.

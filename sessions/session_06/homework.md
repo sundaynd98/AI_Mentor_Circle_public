@@ -1,14 +1,15 @@
 # Session 6 Homework
 
-This week you answer the two questions that matter at the end of a build: **is it actually good, and does it hold up in front of real people?** Both parts are loops you already built, at scale — Part 1 scales your validation loop (you hand-scored outputs last week; now you delegate that critique to an AI judge and calibrate it), and Part 2 gives your closed-loop feedback its first real data by putting the app in front of 5–10 real testers. Part 3 closes the program's toolbelt thread: a CLAUDE.md retrospective and the final cards that complete your toolbelt.
+This week you answer the two questions that matter at the end of a build: **is it actually good, and does it hold up in front of real people?** Both parts are loops you already built, at scale — Part 1 scales your validation loop (you hand-scored outputs last week; now you delegate that critique to an AI judge and calibrate it), and Part 2 gives your closed-loop feedback its first real data by putting the app in front of 5–10 real testers. Part 3 closes the program's toolbelt thread: a CLAUDE.md retrospective and the final cards that complete your toolbelt. **This is the last session of the program** — Part 4 is an optional leave-behind for whenever you want to actually show this project to someone.
 
-**Suggested order:** Part 1 (evaluate for scale — light) → Part 2 (first deployment — the heavy lift) → Part 3 (retrospective + card). Total ~**4.5–5.5 hrs**. *(If time is tight: don't let Part 1 slip — it's short and sharpens everything else. Deployment can spill into the Session 7 window if it must.)*
+**Suggested order:** Part 1 (evaluate for scale — light) → Part 2 (first deployment — the heavy lift) → Part 3 (retrospective + card). Total ~**4.5–5.5 hrs**. *(If time is tight: don't let Part 1 slip — it's short and sharpens everything else. It's fine to take an extra day or two on deployment if you need it — there's no next session to catch up before.)*
 
 | Part | Est. time |
 | ---- | --------- |
 | Part 1 — Evaluate for scale (`evaluating_for_scale`) | ~1–1.5 hrs |
 | Part 2 — First deployment (`first_deployment`) | ~2.5–3 hrs |
 | Part 3 — CLAUDE.md retrospective + complete your toolbelt | ~45–60 min |
+| Part 4 — Prepare your demo (`demoing_your_agent`) — *optional, not in the total above* | ~30–40 min, whenever you're ready |
 
 > **🔄 Standing habit — restart your dev server each new Claude Code session.** Use the **`/restart-dev-server`** slash command you created in Session 4 every time you open a new Claude Code session (or run `/clear`).
 
@@ -62,12 +63,27 @@ That completes your toolbelt.
 
 ---
 
-## Reflection (bring to Session 7)
+## Part 4: Prepare Your Demo (Optional — Encouraged)
 
-After completing the parts above, write a short reflection (a few sentences each) — you'll share it at Session 7 alongside your demo:
+There's no more class after this, but the project doesn't have to stop being useful the moment the program ends. Whenever you're ready to actually show this to someone — a hiring manager, coworkers, a portfolio site — open `@workflows/demoing_your_agent.md` and work through it with Claude. It's self-paced, one sitting, ~30–40 min:
+
+1. **Pick who this is for and the one thing you want them to remember.**
+2. **Pick a narrative arc** — two quick options, converge on one.
+3. **Apply the 3-act structure** (Setup / Confrontation / Resolution) and list what you actually have to show — a recording, a screenshot, real numbers from your eval or deployment.
+4. **Build the outline and script together** — what's on screen and what you'll say for each beat, kept to 5–8 minutes.
+
+Keep `handouts/demo_prep_guide.md` open alongside it — a one-page reference for the 3-act structure and the "show, don't tell" principle, with a worked example.
+
+**Output:** `docs/demo_plans.md` — an outline you can record from or present live.
+
+---
+
+## Reflection
+
+After completing Parts 1–3, write a short reflection (a few sentences each) — this is the closing entry for your `session_log.md` across the whole program:
 
 1. **What did the second measurement and the AI judge teach you?** Did your refinement move the misses — and where would you trust the judge vs. keep yourself in the loop?
 2. **What did deploying force you to make real?** The feedback wiring, the env-var move, the manual pieces — and during the window: did any tester come back unprompted?
 3. **Look at your updated CLAUDE.md and your full set of workflow cards.** What are you actually taking back to your work from this program?
 
-Ask Claude to save your reflection to your `session_log.md` — you'll draw on it for your Session 7 demo and share-out.
+Ask Claude to save your reflection to your `session_log.md`.
