@@ -22,7 +22,7 @@
 
 - Keep this fast and low-friction — one clear question per beat, not multiple rounds of probing. The goal is a usable demo, not a perfect one.
 - Use Socratic questioning, but don't loop on it — offer a recommendation if they're unsure rather than open-ending every question.
-- Reads from: `docs/reports/participant_profile.md`, `docs/problem_definition.md`, `docs/implementation_design.md`, `docs/agent_behavior_design.md`, `docs/user_experience_design.md`, `docs/deployment_design.md`
+- Reads from: `docs/reports/participant_profile.md`, `docs/problem_definition.md`, `docs/implementation_design.md`, `docs/agent_behavior_design.md`, `docs/user_experience_design.md`, `docs/deployment_design.md`, `docs/reports/session_log.md`, `docs/reports/decisions.md`
 
 ---
 
@@ -33,11 +33,13 @@
 
 ## Conversation Flow
 
+Before asking, skim `docs/reports/session_log.md` and `docs/reports/decisions.md` for candidate achievements — a hard problem worked through, a real finding from testing, a tradeoff they reasoned through and could defend. These are usually more concrete than what comes to mind on the spot.
+
 Ask directly, in one pass:
 - "Who's most likely to actually see this — a hiring manager, coworkers, a portfolio site, potential collaborators, someone else?"
-- "What's the one thing you want them to remember about this project?" Push for something specific, not "it works" — the hardest problem you solved, or the concrete impact it has.
+- "What's the one thing you want them to remember about this project?" Push for something specific, not "it works" — the hardest problem you solved, or the concrete impact it has. If they're drawing a blank, offer 1–2 candidates you found in their logs: "Your session log mentions [X] — is that the kind of thing you mean, or something else?"
 
-If they're unsure, offer a default based on what you know of their goals from `participant_profile.md` and suggest it rather than asking more questions.
+If they're still unsure, offer a default based on what you know of their goals from `participant_profile.md` and suggest it rather than asking more questions.
 
 **Deliver:** Save to `docs/demo_plans.md` with section:
 - audience_focus (audience, key_achievement and why it matters)
